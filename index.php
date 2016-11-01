@@ -5,7 +5,13 @@
 		<title>top</title>
 		<link rel="stylesheet" href="css/headfooter.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/mypage.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.roundabout.js"></script>
+		<script>
+    $(document).ready(function() {
+        $('#slideshow ul').roundabout();
+    });
+</script>
 	</head>
 	<body>
 <?php
@@ -14,7 +20,7 @@
 ?>
 <?php
 	//メインの読込
-	require_once("mypage.html");
+	require_once("main.php");
  ?>
 <?php
 	//フッターの読み込み
