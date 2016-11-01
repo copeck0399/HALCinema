@@ -1,7 +1,27 @@
 @charset"utf-8";
 
 main{
+  position: relative;
   width : 1000px;
-  height : 800px;
-  background :#111;
+  height : 1500px;
+  background : #111;
+  margin : 50px auto;
+}
+#mainvisual{
+  position: absolute;
+  top : 150px;
+  width : 1000px;
+  height : 700px;
+  margin : 0 auto;
+}
+#slideshow{
+  width : 1000px;
+  height : 700px;
+  margin : 0 auto;
+}
+#slideshow img{
+
+}
+.roundabout-in-focus{
+
 }

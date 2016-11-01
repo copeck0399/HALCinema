@@ -1,0 +1,139 @@
+@charset"utf-8";
+
+main{
+  position: relative;
+  width : 1000px;
+  height : 1500px;
+  background :#111;
+  margin : 50px auto;
+}
+#theater{
+  background : #fff;
+  width : 1000px;
+  height : 1500px;
+  padding-top  : 12.5px;
+}
+#theater .page_title{
+  width : 975px;
+  height : 60px;
+  margin : 0px auto 30px auto;
+ background: linear-gradient(#ffffff 0%, #ffd434 100%); /* FF3.6-15 */
+}
+#theater .page_title h1{
+  margin-left : 50px;
+  font-weight : 500;
+  font-size : 24px;
+  line-height : 2.5;
+  letter-spacing: 5px;
+}
+#theater .map{
+  width : 1000px;
+  height : 950px;
+  background : url(../img/backmap.png) center top no-repeat;
+  position: relative;
+}
+#theater .map .theater_text{
+  width : 280px;
+  height : 160px;
+  background : rgba(255, 255, 221, 0.5);
+  border : solid 2px #ffd83b;
+  border-radius: 20px;
+  padding-top : 20px;
+}
+#theater .map .theater_text h3{
+  letter-spacing: 5px;
+}
+#theater .map .theater_text:first-child{
+  position: absolute;
+  top : 10px;
+  right : 15px;
+}
+#theater .map .theater_text:nth-child(2){
+  position: absolute;
+  top : 300px;
+  right : 15px;
+}
+#theater .map .theater_text:nth-child(3){
+  position: absolute;
+  top : 270px;
+  right : 350px;
+}
+#theater .map .theater_text:nth-child(4){
+  position: absolute;
+  top : 530px;
+  right : 100px;
+}
+#theater .map .theater_text:nth-child(5){
+  position: absolute;
+  top : 700px;
+  right : 450px;
+}
+#theater .map .theater_text:last-child{
+  position: absolute;
+  top : 480px;
+  left  : 30px;
+}
+#theater .map .theater_text h3{
+  font-size : 20px;
+  text-align: center;
+}
+#theater .map .theater_text ul{
+  width : 240px;
+  padding : 15px;
+  margin : 0 auto;
+  height : 100px;
+  clear : both;
+}
+#theater .map .theater_text ul li{
+  font-size : 18px;
+  letter-spacing: 2px;
+  line-height: 3.0;
+  margin-left : 20px;
+  margin-right :35px;
+  float : left;
+}
+#theater .map .theater_text ul li:first-child{
+  margin-right : 50px;
+}
+#theater .map .theater_text ul li:nth-child(2){
+  float : none;
+  margin-right : 20px;
+}
+#theater .map .theater_text ul li:nth-child(3){
+  margin-right : 50px;
+}
+#theater .map .theater_text ul li:last-child{
+  margin-right : 20px;
+  margin-left : 0;
+}
+#theater .map .theater_text ul li a{
+  color : #333;
+  text-decoration: underline;
+}
+#theater .map .theater_text ul li span.list-type{
+  color : #e5735f;
+}
+.attention{
+  border : solid 1px #333;
+  width : 935px;
+  height : 380px;
+  margin : 0 auto;
+  padding : 20px;
+}
+.attention ul{
+  margin-bottom : 50px;
+}
+.attention ul li{
+  letter-spacing: 1px;
+  font-size : 14px;
+  line-height : 3.0;
+  display: table;
+}
+.attention ul li  img{
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.attention p{
+  font-size : 12px;
+  line-height: 2.0;
+}
