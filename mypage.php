@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>top</title>
+		<link rel="stylesheet" href="css/headfooter.css">
+		<link rel="stylesheet" href="css/mypage.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.roundabout.js"></script>
+	</head>
+	<body>
+<?php
+	//ヘッダーの読み込み
+	require_once( "header.html" );
+?>
 <main>
   <div id = "mypage">
     <div id = "mypage_title">
@@ -43,3 +58,9 @@
     </div>
   </div>
 </main>
+<?php
+	//フッターの読み込み
+	require_once( "footer.html" );
+?>
+	</body>
+</html>
