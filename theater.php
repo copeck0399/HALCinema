@@ -10,6 +10,15 @@
 <?php
 	//ヘッダーの読み込み
 	require_once( "header.html" );
+
+	//DB接続設定
+	include("../dbconnection/config.php");
+	include("../dbconnection/connect.php");
+
+	//SQL
+	$hokkaido = $pdo->prepare('select * from theater where area = "北海道"');
+	$hokkaido = execute();
+
 ?>
 <main>
 	<div id="theater">
@@ -18,7 +27,7 @@
 		</div>
 		<div class="map">
 			<div class="theater_text">
-				<h3>【地方名】</h3>
+				<h3></h3>
 				<ul>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
