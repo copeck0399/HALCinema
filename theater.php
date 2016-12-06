@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<title>top</title>
 		<link rel="stylesheet" href="css/headfooter.css">
 		<link rel="stylesheet" href="css/theater.css">
@@ -12,12 +12,14 @@
 	require_once( "header.html" );
 
 	//DB接続設定
-	include("../dbconnection/config.php");
-	include("../dbconnection/connect.php");
+	include("dbconnection/config.php");
+	include("dbconnection/connect.php");
 
-	//SQL
-	$hokkaido = $pdo->prepare('select * from theater where area = "北海道"');
-	$hokkaido = execute();
+	$hokkaido = $pdo->query('select name from theater where area = "北海道"');
+	while($row = $hokkaido -> fetch(PDO::FETCH_ASSOC)){
+		$h_name = $row["name"];
+
+	}
 
 ?>
 <main>
@@ -27,7 +29,16 @@
 		</div>
 		<div class="map">
 			<div class="theater_text">
-				<h3></h3>
+				<h3>【北海道】</h3>
+				<ul>
+					<li><a href="#"><span class="list-type">・</span><?php echo $h_name[0] ?></a></li>
+					<li><a href="#"><span class="list-type">・</span><?php echo $h_name[1] ?></a></li>
+					<li><a href="#"><span class="list-type">・</span><?php echo $h_name[2] ?></a></li>
+					<li><a href="#"><span class="list-type">・</span><?php echo $h_name[3] ?></a></li>
+				</ul>
+			</div>
+			<div class="theater_text">
+				<h3>【東北】</h3>
 				<ul>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
@@ -36,7 +47,7 @@
 				</ul>
 			</div>
 			<div class="theater_text">
-				<h3>【地方名】</h3>
+				<h3>【中部】</h3>
 				<ul>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
@@ -45,7 +56,7 @@
 				</ul>
 			</div>
 			<div class="theater_text">
-				<h3>【地方名】</h3>
+				<h3>【関東】</h3>
 				<ul>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
@@ -54,7 +65,7 @@
 				</ul>
 			</div>
 			<div class="theater_text">
-				<h3>【地方名】</h3>
+				<h3>【関西】</h3>
 				<ul>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
@@ -63,16 +74,7 @@
 				</ul>
 			</div>
 			<div class="theater_text">
-				<h3>【地方名】</h3>
-				<ul>
-					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
-					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
-					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
-					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
-				</ul>
-			</div>
-			<div class="theater_text">
-				<h3>【地方名】</h3>
+				<h3>【中国】</h3>
 				<ul>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
 					<li><a href="#"><span class="list-type">・</span>劇場名</a></li>
