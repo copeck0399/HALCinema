@@ -1,0 +1,192 @@
+main {
+  margin:0 auto;
+}
+
+#mypage {
+  width:1000px;
+  height: 900px;
+  background:#fff;
+  margin:0 auto;
+}
+
+#mypage p {
+  font-size: 20px;
+}
+
+#mypage_title {
+  border-bottom: solid 1px #000;
+  width: 900px;
+  margin: 100px;
+}
+
+#mypage_title h1 {
+  font-size: 35px;
+  float: left;
+}
+
+#mypage_title a {
+  background-color: #e5735f;
+  font-size: 20px;
+}
+
+#mypage_title a img {
+  width: 20px;
+  height: auto;
+}
+
+#column_wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#info {
+  width: 900px;
+  height: 300px;
+  background-color: #e5e5e5;
+  border: solid 2px #000;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#info ul {
+  top: 10px;
+  left:0;
+  right:0;
+}
+
+#users li {
+  float: left;
+}
+
+#news {
+  clear: both;
+}
+
+#news p {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+#news ul {
+  text-align: center;
+}
+
+#news li {
+  float: left;
+}
+
+#news li:nth-child(1) {
+  margin-right: 50px;
+}
+
+#users li:nth-child(1) {
+  background-color: #fd9002;
+  border-radius: 5px;
+  padding:6px;
+  margin-right: 3px;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+
+#users li:nth-child(2) {
+  margin-top: 6px;
+  margin-right: 100px;
+}
+
+#users li:nth-child(3) {
+  background-color: #01bb47;
+  border-radius: 5px;
+  padding:6px;
+  margin-right: 3px;
+  color: #fff;
+  width: 150px;
+  text-align: center;
+}
+
+#users li:nth-child(4) {
+  margin-top:6px;
+}
+
+#reserve {
+  width: 900px;
+  height: 120px;
+  background-color: #e5e5e5;
+  border: solid 2px #000;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  clear: both;
+}
+
+#reserve h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+#reserve p {
+  text-align: center;
+}
+
+#reserve a:nth-child(1) {
+  margin-right: 80px;
+}
+
+#modify {
+  width: 900px;
+  height: 120px;
+  background-color: #e5e5e5;
+  border: solid 2px #000;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#modify h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+#modify p {
+  line-height: 30px;
+}
+
+#confirm {
+  width: 400px;
+  height: 100px;
+  background-color: #e5e5e5;
+  border: solid 2px #000;
+  text-align: center;
+  margin-top: 30px;
+  float: left;
+}
+
+#confirm h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+#history {
+  width: 400px;
+  height: 100px;
+  background-color: #e5e5e5;
+  border: solid 2px #000;
+  text-align: center;
+  margin-top: 30px;
+  float: right;
+}
+
+#history h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.orange {
+  color: #ff0000;
+  overflow: hidden;
+}
