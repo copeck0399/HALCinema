@@ -1,0 +1,132 @@
+﻿@charset"utf-8";
+
+*{
+	margin : 0;
+	padding : 0;
+}
+body{
+	width : 1000px;
+	margin : 0 auto;
+}
+body{
+	position : relative;
+	text-align: center;
+}
+header{
+	height : 160px;
+}
+
+.content{
+	width:auto;
+	padding-bottom: 30px;
+	background-color: #eee;
+}
+
+form{
+	width: 100%;
+}
+
+table{
+	width: 100%;
+	height: 600px;
+	margin-bottom: 200px;
+	padding: 30px 30px;
+}
+
+th{
+	border: solid #000 1px;
+}
+
+tr{
+	border-bottom: solid #000 1px;
+}
+
+td{
+	border: solid #ff8000 1px
+}
+
+td img{
+	text-align: center;
+	border: solid #000 1px;
+	padding-top: 20px;
+}
+
+.ptitle1{
+	margin-top: 60px;
+	text-align: -webkit-left;
+	width: 100%;
+	color: #fff;
+}
+
+.ptitle{
+	text-align: -webkit-left;
+	width: 100%;
+	color: #fff;
+}
+
+.underline{
+	border-bottom: 2px solid #ff8000;
+}
+
+.underline2{
+	border-bottom: 1px solid #bebebe;
+	padding-bottom: 10px;
+}
+
+.logoh1{
+	width: 94%;
+	display: inline-block;
+  color : #fff;
+  border : solid 2px #e89181;
+	text-align: left;
+  border-radius: 10px;
+  padding : 7.5px 30px;
+	margin-bottom: 20px;
+  font-size : 20px;
+	background: #e89181; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e89181 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e89181 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e89181 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e89181',GradientType=0 ); /* IE6-9 */
+	text-shadow:
+		0px -1px #000,
+		1px 0px #000,
+		0px 1px #000,
+		-1px 1px #000;}
+}
+
+.upload{
+	font-size:20px;
+	width:200px;
+	height:50px;
+	background-color:#209cb7;
+	color:white;
+}
+
+.add_member{
+	font-size:20px;
+	width:200px;
+	height:50px;
+	background-color:#209cb7;
+	color:white;
+
+}
+
+.cancel{
+	font-size: 20px;
+	width:200px;
+	height:50px;
+	background-color:#ff7a19;
+	color:white;
+}
+
+
+.newform_name{
+	float: left;
+	padding:  0 20px;
+}
+
+.newform_text{
+	display: block;
+	text-align: right;
+}

@@ -33,12 +33,12 @@ main{
   position: relative;
 }
 #theater .map .theater_text{
-  width : 280px;
-  height : 160px;
+  width : 270px;
+  height : 140px;
   background : rgba(255, 255, 221, 0.5);
   border : solid 2px #ffd83b;
   border-radius: 20px;
-  padding-top : 20px;
+  padding-top :15px;
 }
 #theater .map .theater_text h3{
   letter-spacing: 5px;
@@ -68,6 +68,11 @@ main{
   top : 700px;
   right : 450px;
 }
+#theater .map .theater_text:nth-child(6){
+  position: absolute;
+  top : 500px;
+  right : 400px;
+}
 #theater .map .theater_text:last-child{
   position: absolute;
   top : 480px;
@@ -78,14 +83,14 @@ main{
   text-align: center;
 }
 #theater .map .theater_text ul{
-  width : 240px;
+  width : 220px;
   padding : 15px;
   margin : 0 auto;
   height : 100px;
   clear : both;
 }
 #theater .map .theater_text ul li{
-  font-size : 18px;
+  font-size : 16px;
   letter-spacing: 2px;
   line-height: 3.0;
   margin-left : 20px;
@@ -100,7 +105,7 @@ main{
   margin-right : 20px;
 }
 #theater .map .theater_text ul li:nth-child(3){
-  margin-right : 30px;
+  margin-right : 50px;
 }
 #theater .map .theater_text ul li:last-child{
   margin-right : 20px;
