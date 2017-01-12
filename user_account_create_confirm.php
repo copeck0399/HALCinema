@@ -65,7 +65,6 @@
 		</form>
 	</div>
 <?php
-	<!-- フッターの読み込み  -->
 	 require_once( "footer.html" );
 ?>
 	</body>

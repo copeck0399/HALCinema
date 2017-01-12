@@ -15,6 +15,15 @@
 	include("dbconnection/config.php");
 	include("dbconnection/connect.php");
 
+	$img1 = $pdo->prepare('SELECT img1 FROM film WHERE title = "ズートピア"');
+	$img2 = $pdo->prepare('SELECT img2 FROM film WHERE title = "ズートピア"');
+	$img3 = $pdo->prepare('SELECT img3 FROM film WHERE title = "ズートピア"');
+
+	// $release = $pdo->prepare('SELECT release FROM film WHERE title = "ズートピア"');
+	$year = $pdo->prepare('SELECT year FROM film WHERE title = "ズートピア"');
+	$year -> execute();
+
+
 
 ?>
 
@@ -27,9 +36,9 @@
 					<img src="img/rankingimg.jpg" alt="changeimg">
 				</div>
 				<div class="imglist">
-					<img src="img/rankingimg.jpg" alt="list">
-					<img src="img/rankingimg.jpg" alt="list">
-					<img src="img/rankingimg.jpg" alt="list">
+					<img src="img/" + <?php $img1?> alt="list">
+					<img src="img/" + <?php $img2?> alt="list">
+					<img src="img/" + <?php $img3?> alt="list">
 				</div>
 			</div>
 		</div>
@@ -54,8 +63,8 @@
 		<h2>作品概要</h2>
 			<article>
 				<p>ストーリー</p>
-				<p>[公開日]</p>
-				<p>[制作年]</p>
+				<p>[公開日]	<?php echo $release?></p>
+				<p>[制作年]	<?php echo $year?></p>
 				<p>[制作国]</p>
 				<p>[上映時間]</p>
 				<p>[制作会社]</p>
