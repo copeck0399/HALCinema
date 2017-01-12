@@ -1,4 +1,16 @@
-<!-- main -->
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/headfooter.css">
+		<link rel="stylesheet" href="css/login.css" media="screen" title="css">
+		<title>会員ログイン</title>
+	</head>
+	<body>
+<?php
+	//ヘッダーの読み込み
+	require_once( "header.html" );
+?>
 <main>
   <div id = "login_form">
     <div id = "page_title">
@@ -20,3 +32,9 @@
     </div>
   </div>
 </main>
+  <?php
+    //フッターの読み込み
+    require_once( "footer.html" );
+  ?>
+</body>
+</html>

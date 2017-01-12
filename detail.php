@@ -11,8 +11,11 @@
 	//ヘッダーの読み込み
 	require_once( "header.html" );
 
+	//データベース接続に必要なファイル群
 	include("dbconnection/config.php");
 	include("dbconnection/connect.php");
+
+
 ?>
 
 	<main>
