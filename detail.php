@@ -19,12 +19,14 @@
 	$img2 = $pdo->prepare('SELECT img2 FROM film WHERE title = "ズートピア"');
 	$img3 = $pdo->prepare('SELECT img3 FROM film WHERE title = "ズートピア"');
 
-	$img1 = execute();
-	$img1 = execute();
-	$img1 = execute();
+	$img1 -> execute();
+	$img2 -> execute();
+	$img3 -> execute();
 
 
-	// $release = $pdo->prepare('SELECT release FROM film WHERE title = "ズートピア"');
+	$release = $pdo->prepare('SELECT rdate FROM film WHERE title = "ズートピア"');
+	$release -> execute();
+
 	$year = $pdo->prepare('SELECT year FROM film WHERE title = "ズートピア"');
 	$year -> execute();
 
