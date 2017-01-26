@@ -15,20 +15,26 @@
 	include("dbconnection/config.php");
 	include("dbconnection/connect.php");
 
-	$img1 = $pdo->prepare('SELECT img1 FROM film WHERE title = "ズートピア"');
-	$img2 = $pdo->prepare('SELECT img2 FROM film WHERE title = "ズートピア"');
-	$img3 = $pdo->prepare('SELECT img3 FROM film WHERE title = "ズートピア"');
+	$img1 = $pdo->prepare('SELECT img1 FROM film WHERE title = "君の名は。"');
+	$img2 = $pdo->prepare('SELECT img2 FROM film WHERE title = "君の名は。"');
+	$img3 = $pdo->prepare('SELECT img3 FROM film WHERE title = "君の名は。"');
 
 	$img1 -> execute();
 	$img2 -> execute();
 	$img3 -> execute();
 
 
-	$release = $pdo->prepare('SELECT rdate FROM film WHERE title = "ズートピア"');
-	$release -> execute();
+	// $release = $pdo->prepare('SELECT rdate FROM film WHERE title = "君の名は。"');
+	// $release -> execute();
 
-	$year = $pdo->prepare('SELECT year FROM film WHERE title = "ズートピア"');
+	$year = $pdo->prepare('SELECT year FROM film WHERE title = "君の名は。"');
 	$year -> execute();
+
+	$country = $pdo->prepare('SELECT country FROM film WHERE title = "君の名は。"');
+	$country -> execute();
+
+	$runtime = $pdo->prepare('SELECT runtime FROM film where title = "君の名は。"');
+	$runtime -> execute();
 
 
 
@@ -36,7 +42,7 @@
 
 	<main>
 		<p class="none">a</p>
-			<h1>ズートピア</h1>
+			<h1>君の名は。</h1>
 		<div class="outer">
 			<div id="slide">
 				<div class="changeimg">
@@ -70,10 +76,10 @@
 		<h2>作品概要</h2>
 			<article>
 				<p>ストーリー</p>
-				<p>[公開日]	<?php echo $release?></p>
-				<p>[制作年]	<?php echo $year?></p>
-				<p>[制作国]</p>
-				<p>[上映時間]</p>
+				<!-- <p>[公開日]	<?php echo $release ?></p> -->
+				<p>[制作年]	<?php echo $year ?></p>
+				<p>[制作国]	<?php echo $country ?></p>
+				<p>[上映時間] <?php echo $runtime ?></p>
 				<p>[制作会社]</p>
 				<p>[制作会社・制作]</p>
 				<p>[配給]</p>
