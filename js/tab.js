@@ -1,0 +1,14 @@
+$(function(){
+	$(".now").click(function(){
+		$(this).removeClass("non_selected").addClass("tab_selected");
+		$(".will").removeClass("tab_selected").addClass("non_selected");
+		$(".will_lists").css({"display":"none"});
+		$(".now_lists").css({"display":"block"});
+	});
+	$(".will").click(function(){
+		$(this).removeClass("non_selected").addClass("tab_selected");
+		$(".now").removeClass("tab_selected").addClass("non_selected");
+		$(".now_lists").css({"display":"none"});
+		$(".will_lists").css({"display":"block"});
+	});
+ });
