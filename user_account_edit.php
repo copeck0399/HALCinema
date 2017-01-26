@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/headfooter.css">
-		<link rel="stylesheet" href="css/user_account_edit.css" media="screen" title="css">
+		<link rel="stylesheet" href="css/memberinfos.css" media="screen" title="css">
 		<title>◯会員情報変更</title>
 	</head>
 	<body>
@@ -12,152 +12,173 @@
 	require_once( "header.html" );
 ?>
 <div class="content">
-	<h1>◯会員情報変更</h1>
+	<h1 class="h1">◯ 会員情報変更</h1>
 	<p class="ptitle1">住所やメールアドレスなどの会員情報の変更ができます。</p>
 	<p class="underline"></p><br>
 	<h2 class="logoh1">変更したい項目を入力してください！</h2>
 	<section>
-		<p class="ptitle"><img src="img/warning.png" width="14" height="14" alt="icon" />入力は変更される項目のみで変更が可能です</p><br>
+		<p class="ptitle"><img src="img/warning.png" width="14" height="14" alt="icon" />入力は変更される項目のみで変更が可能です</p>
 		<p class="ptitle"><img src="img/warning.png" width="14" height="14" alt="icon" />変更の際はパスワードは必ず入力してください。</p><br>
 	</section>
 
-		<form action=".php" class="formadd" method="POST">
-			<!-- ***フォームA部分*** -->
-			<p class="underline2"></p><br>
-			<p class="newform_name">氏名(漢字)</p>
-			<p class="newform_text">
+      <form name="Form1" method="post" action="exit_comfirm.php">
+			<div class="form">
+        <table>
+          <tr>
+            <th>氏名（漢字）</th>
+            <td>
+              　姓<input type="text" class="tbox" name="name1" value="">　名<input type="text" class="tbox" name="name2" value="">
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： 山田　太郎
+								</p>
+            </td>
+          </tr>
+					<tr>
+						<th>氏名（カナ）</th>
+						<td>
+							セイ<input type="text" class="tbox" name="name3" value="">メイ<input type="text" class="tbox" name="name4" value="">
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： ヤマダ　タロウ
+								</p>
+						</td>
+					</tr>
 
-				姓<input type="text" name="name" value="">
-				名<input type="text" name="name" value="">
-				|  例　：　山田　太郎
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームA終了*** -->
+					<tr>
+						<th>電話番号</th>
+						<td>
+							<input type="text" class="tbox2" name="tel" value=""><br>※（半角数字、ハイフンスペース無し）
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： 08012345678
+								</p>
+						</td>
+					</tr>
 
-			<!-- ***フォームB部分*** -->
-			<p class="newform_name">氏名(カナ)</p>
-			<p class="newform_text">
+					<tr>
+						<th>メールアドレス</th>
+						<td>
+							<input type="text" class="tbox2" name="mail" value="">
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： hal@gmail.com
+								</p>
+						</td>
+					</tr>
 
-				姓<input type="text" name="name" value="">
-				名<input type="text" name="name" value="">
-					|  例　：　ヤマダ　タロウ　
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームB終了*** -->
+					<tr>
+						<th>メールアドレス（再入力）</th>
+						<td>
+							<input type="text" class="tbox2" name="mail" value=""><br>※誤って入力すると、確認メールが届きませんので十分にご注意ください。（コピー&ペースト不可）
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： hal@gmail.com
+								</p>
+						</td>
+					</tr>
 
-			<!-- ***フォームC部分*** -->
-			<p class="newform_name">電話番号</p>
-			<p class="newform_text">
+					<tr>
+						<th>パスワード</th>
+						<td>
+							<img src="img/hissu.jpg" alt="h" width="30px" height="20px" />
+							<input type="text" class="tbox2" name="pass" value="">
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： A1B23C4D5E
+								</p>
+						</td>
+					</tr>
 
-				<input type="text" size="30" name="name" value="">
-					|  例　：　08012345678
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームC終了*** -->
+					<tr>
+						<th>パスワード（再入力）</th>
+						<td>
+							<img src="img/hissu.jpg" alt="h" width="30px" height="20px" />
+							<input type="text" class="tbox2" name="pass" value=""><br>
+							<input type="checkbox" name="riyu" value="1">パスワードを表示する
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： A1B23C4D5E
+								</p>
+						</td>
+					</tr>
 
-			<!-- ***フォームD部分*** -->
-			<p class="newform_name">メールアドレス</p>
-			<p class="newform_text">
+					<tr>
+						<th>秘密の質問</th>
+						<td>
+							<select name="example" class="select">
+								<option value="1">選択してください</option>
+								<option value="2">女房の旧姓は？</option>
+								<option value="3">私の祖母の名前は？</option>
+								<option value="4">小学校６年生のときの担任は？</option>
+								<option value="5">お隣さんのペットの名前は？</option>
+							</select>
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： 好きな食べ物は？
+								</p>
+						</td>
+					</tr>
 
-				<input type="text" size="40" name="name" value="">
-					|  例　：　hal@gmail.com
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームD終了*** -->
+					<tr>
+						<th>秘密の質問の答え</th>
+						<td>
+							<input type="text" class="tbox2" name="example2" value="">
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： カレーライス
+								</p>
+						</td>
+					</tr>
 
-			<!-- ***フォームE部分*** -->
-			<p class="newform_name">メールアドレス(再入力)</p>
-			<p class="newform_text">
+					<tr>
+						<th>最寄の劇場</th>
+						<td>
+							<select name="station" class="select">
+								<option value="1">選択してください</option>
+								<option value="2">新宿</option>
+								<option value="3">品川</option>
+								<option value="4">池袋</option>
+								<option value="5">さいたま新都心</option>
+							</select>
+							</td>
+								<td>
+									<p class="righttext">
+									｜　例 ： 海老名
+								</p>
+						</td>
+					</tr>
 
-				<input type="text" size="40" name="name" value="">
-					|  例　：　hal@gmail.com
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームE終了*** -->
+					<tr>
+						<th>好きな映画のジャンル</th>
+						<td class="check">
 
-			<!-- ***フォームF部分*** -->
-			<p class="newform_name">パスワード</p>
-			<p class="newform_text">
-				<img src="img/hissu.jpg" width="27" height="14" alt="必須" />
-				<input type="password" name="name" value="">
-					|  例　：　A1B23C4D5E
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームF終了*** -->
-
-			<!-- ***フォームG部分*** -->
-			<p class="newform_name">パスワード(再入力)</p>
-			<p class="newform_text">
-				<img src="img/hissu.jpg" width="27" height="14" alt="必須" />
-				<input type="password" name="name" value="">
-					|  例　：　A1B23C4D5E
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームG終了*** -->
-
-			<!-- ***フォームH部分*** -->
-			<p class="newform_name">秘密の質問</p>
-			<p class="newform_text">
-
-				<select id="secret" name="secret">
-				<option value="11" selected>好きな食べ物は?</option>
-				<option value="22">お母さんの旧姓は?</option>
-				<option value="33">出生地は?</option>
-				<option value="44">ペットの名前は?</option>
-				<option value="55">初めての海外旅行は?</option>
-
-				</select>
-					|  例　：　好きな食べ物は？
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームH終了*** -->
-
-			<!-- ***フォームI部分*** -->
-			<p class="newform_name">秘密の質問の答え</p>
-			<p class="newform_text">
-
-				<input type="text" name="name" value="">
-					|  例　：　カレーライス
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームI終了*** -->
-
-			<!-- ***フォームJ部分*** -->
-			<p class="newform_name">最寄りの劇場</p>
-			<p class="newform_text">
-
-				<select id="shoplist" name="shoplist">
-				<option value="11" selected>新宿</option>
-				<option value="22">渋谷</option>
-				<option value="33">池袋</option>
-				<option value="44">恵比寿</option>
-				<option value="55">品川</option>
-				</select>
-					|  例　：　海老名
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームJ終了*** -->
-
-			<!-- ***フォームK部分*** -->
-			<p class="newform_name">好きな映画のジャンル</p>
-			<p class="newform_text">
-
-				<input type="checkbox" name="j1" value="1"> アクション
-				<input type="checkbox" name="j1" value="2"> ロマンス
-				<input type="checkbox" name="j1" value="3"> 歴史もの
-				<input type="checkbox" name="j1" value="4"> 人間ドラマ <br>
-				<input type="checkbox" name="j1" value="5"> コメディ
-				<input type="checkbox" name="j1" value="6"> SF
-				<input type="checkbox" name="j1" value="7"> ホラー
-				<input type="checkbox" name="j1" value="8"> サスペンス
-				<input type="checkbox" name="j1" value="9"> ファミリー向け作品
-			</p>
-			<p class="underline2"></p><br>
-			<!-- ***フォームK終了*** -->
-
-			<p>
-			<input type="button" name="name" class="cancel" value="キャンセル">
-			<input type="button" name="name" class="upload" value="確認">
+	<input type="checkbox" name="riyu" value="1">アクション
+	<input type="checkbox" name="riyu" value="2">ロマンス
+	<input type="checkbox" name="riyu" value="3">歴史もの
+	<input type="checkbox" name="riyu" value="4">人間ドラマ<br>
+	<input type="checkbox" name="riyu" value="5">コメディ
+	<input type="checkbox" name="riyu" value="6">SF
+	<input type="checkbox" name="riyu" value="7">ホラー
+	<input type="checkbox" name="riyu" value="8">サスペンス
+	<input type="checkbox" name="riyu" value="9">ファミリー向け作品
+							</td>
+					</tr>
+		</table>
+	</div>
+			<p class="underline2"></p>
+      		<p class="button">
+			<input type="submit" name="name" class="cancel" value="キャンセル">
+			<input type="submit" name="name" class="upload" value="確認">
 			</p>
 		</form>
 	</div>
