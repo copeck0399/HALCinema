@@ -2,7 +2,7 @@
 main{
   position: relative;
   width : 90%;
-  height : 1250px;
+  height : 1450px;
   margin : 75px auto;
 }
 .chairs{
@@ -135,13 +135,13 @@ main{
 .select{
   float : right;
   width : 68%;
-  height : 900px;
+  height : 950px;
   border : solid 10px #a1a1aa;
   margin-bottom: 50px;
 }
 .select .inner{
   padding : 40px 20px;
-  height : 900px;
+  height : 950px;
   box-sizing: border-box;
 }
 .screen{
@@ -159,19 +159,125 @@ main{
 .chair{
   width : 100%;
 }
-.line_a{
+.line_a,.line_b,.line_c,.line_d,.line_e,.line_f,.line_g,.line_h,.line_i{
   width : 100%;
-  height : 30px;
+  height : 60px;
+  margin-bottom : 15px;
 }
-.line_a li{
+.line_j{
+  width : 100%;
+  height : 60px;
+  margin-bottom: 0;
+}
+.chair span{
   float : left;
   width : 30px;
-  height : 30px;
+  height : 60px;
+  line-height: 60px;
+  font-size : 36px;
+  text-align: center;
+  margin-right : 30px;
+}
+.chair li{
+  float: left;
+  width : 45px;
+  height : 60px;
+  line-height: 60px;
+  font-size : 28px;
+  background : #9894b9;
+  text-align: center;
+  margin-right : 16px;
+  border-radius: 5px;
+}
+.right_last{
+  margin-right : 0 !important;
 }
 .selected{
   clear: both;
   width : 100%;
-  height : 300px;
+  height : 400px;
   background : #100959;
   border : solid 10px #a1a1aa;
+}
+.selected .inner{
+  box-sizing:border-box;
+  height : 400px;
+  padding : 40px 20px;
+}
+.selected_chair{
+  width : 450px;
+  margin : 0 auto 40px auto;
+  text-align: center;
+  position: relative;
+}
+.selected_chair h2{
+  width : 100%;
+  font-size : 20px;
+  letter-spacing: 1px;
+  background: #56568c;
+  padding : 10px 0;
+  margin-bottom : 15px;
+}
+.pink_arrow{
+  position: absolute;
+  top : 54px;
+  right : 105px;
+  width : 12px;
+}
+.selected_chair .clear_btn{
+  text-align: right;
+  text-decoration: underline;
+  margin-bottom : 25px;
+}
+.selected_chair .clear_btn a{
+  color : #9abffa;
+}
+.chair_box{
+  width : 375px;
+  margin : 0 auto;
+}
+.chair_box ul{
+  width : 100%;
+  height : 64px;
+}
+.chair_box ul li{
+  width : 50px;
+  float : left;
+  margin-right: 15px;
+}
+.chair_box ul li:last-child{
+  margin-right : 0;
+}
+.chair_box ul li img{
+  width : 50px;
+}
+.next_btn{
+  width : 800px;
+  margin : 0 auto;
+  text-align: center;
+  background: #666;
+  border-radius: 5px;
+  padding : 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.white_arrow{
+  position: absolute;
+  top : 29px;
+  right : 230px;
+  width : 15px;
+}
+.next_btn p{
+  text-align: center;
+  border-radius: 5px;
+  width : 350px;
+  padding : 10px;
+  margin : 0 auto 15px auto;
+  font-size : 22px;
+  font-weight: bold;
+  background: #a1a1a1;
+}
+.next_btn small{
+  font-size : 12px;
+  letter-spacing: 1px;
 }
