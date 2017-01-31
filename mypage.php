@@ -4,9 +4,8 @@
 		<meta charset="utf-8">
 		<title>top</title>
 		<link rel="stylesheet" href="css/headfooter.css">
-		<link rel="stylesheet" href="css/mypage.css">
+		<link rel="stylesheet" href="css/user.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-		<script type="text/javascript" src="js/jquery.roundabout.js"></script>
 	</head>
 	<body>
 <?php
@@ -15,10 +14,13 @@
 ?>
 <main>
   <div id = "mypage">
+
     <div id = "mypage_title">
-      <h1>マイページ</h1>
       <a><img src = "img/return.png">トップに戻る</a>
+      <h1>マイページ</h1>
+			<div class="line"></div>
     </div>
+
     <div id = "column_wrapper">
       <div id = "info">
         <div id = "users">
@@ -35,25 +37,26 @@
 	          <li>7月</li>
 	          <li>クレジットカードでの決済が可能になりました</li>
 	        </ul>
+					<p class="underline3"></p>
 				</div>
       </div>
       <div id = "reserve">
-        <h1>最寄りの劇場から予約する</h1>
+        <h1><a href="#" class="color">最寄りの劇場から予約する</a></h1>
         <p>現在の最寄り劇場 養蜂場 から<a href = "#" class = "orange">予約</a>
            最寄り以外で予約する場合は<a href = "#" class = "orange">こちら</a></p>
       </div>
       <div id = "modify">
-        <h1>会員情報の変更</h1>
+        <h1><a href="#" class="color">会員情報の変更</a></h1>
         <p>パスワード、メールアドレスや最寄りの劇場の変更ができます</p>
         <p>退会は<a href = "#" class = "orange">こちら</a></p>
       </div>
       <div id = "confirm">
-        <h1>現在の予約状況の確認</h1>
+          <h1><a href="#" class="color">現在の予定状況の確認</a></h1>
         <p>チケット、座席の予約状況を確認します</p>
         <p>確認は<a href = "#" class = "orange">こちら</a></p>
       </div>
       <div id = "history">
-        <h1>予約履歴の確認</h1>
+        <h1><a href="#" class="color">予定状況の確認</a></h1>
         <p>チケット、座席の予約履歴を確認します</p>
         <p>確認は<a href = "#" class = "orange">こちら</a></p>
       </div>

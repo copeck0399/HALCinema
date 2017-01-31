@@ -6,11 +6,6 @@ main{
   color:#fff;
 }
 
-main {
-  width: 1000px;
-  margin: 0 auto;
-}
-
 #login_form {
   width:1000px;
   height:400px;

@@ -65,7 +65,7 @@
 		</form>
 	</div>
 <?php
-	 require_once( "footer.html" );
+		 require_once( "footer.html" );
 ?>
 	</body>
 </html>
