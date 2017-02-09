@@ -1,10 +1,10 @@
 <?php
-$name1 = $_POST["name1"];
-$name2 = $_POST["name2"];
-$name3 = $_POST["name3"];
-$name4 = $_POST["name4"];
-$email = $_POST["email"];
-$tell = $_POST["tell"];
+  $name1 = $_POST["name1"];
+  $name2 = $_POST["name2"];
+  $name3 = $_POST["name3"];
+  $name4 = $_POST["name4"];
+  $email = $_POST["email"];
+  $tell = $_POST["tell"];
 
  ?>
 
@@ -25,7 +25,7 @@ $tell = $_POST["tell"];
 	<h1 class="h1">◯ 退会が完了いたしました。</h1>
 	<p class="ptitle1">ご利用ありがとうございました。またの機会をお待ちしております。</p>
 	<p class="underline"></p><br>
-	
+
 		<form>
       <p class="button">
 				<input type="button" name="name" class="upload" value="TOPへ戻る">
