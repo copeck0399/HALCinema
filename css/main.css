@@ -33,205 +33,205 @@ main{
 }
 
 .title_img{
-	float:left;
-	width:40px;
-	margin:5px 10px;
+  float:left;
+  width:40px;
+  margin:5px 10px;
 }
 
 .theater{
-	width: 260px;
-	color:#000;
-	text-decoration: none;
-	height: 350px;
-	background-color: #eed434;
-	margin: auto;
-	float: left;
-	margin:0px 35px 0px 0px;
+  width: 260px;
+  color:#000;
+  text-decoration: none;
+  height: 350px;
+  background-color: #eed434;
+  margin: auto;
+  float: left;
+  margin:0px 35px 0px 0px;
 }
 
 .theater h1{
-	color: #fff;
-	float: right;
-	font-size: 22px;
-	font-weight: 100;
-	padding:10px 15px 0px 0px;
+  color: #fff;
+  float: right;
+  font-size: 22px;
+  font-weight: 100;
+  padding:10px 15px 0px 0px;
 }
 
 .theater ul li{
-	clear: both;
-	width: 260px;
-	float: left;
-	height: 62px;
-	display: block;
+  clear: both;
+  width: 260px;
+  float: left;
+  height: 62px;
+  display: block;
     position: relative;
     border: solid 0.5px #000;
-	box-sizing: border-box;
-	/*background-color:rgb(255,255,255,0);*/
+  box-sizing: border-box;
+  /*background-color:rgb(255,255,255,0);*/
 }
 
 .theater ul li a{
-	display: block;
-	/*padding:10px 0px 0px 30px;*/
-	font-size: 18px;
-	width: 100%;
-	height: 62px;
-	text-align: center;
-	line-height: 62px;
+  display: block;
+  /*padding:10px 0px 0px 30px;*/
+  font-size: 18px;
+  width: 100%;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
 }
 
 .theater ul li a img{
-	position: absolute;
-	right: 0px;
-	height: 50px;
-	width: auto;
-	top:0px;
+  position: absolute;
+  right: 0px;
+  height: 50px;
+  width: auto;
+  top:0px;
 }
 
 /*ranking*/
 
 
 .ranking{
-	height: 350px;
-	width: 260px;
-	background-color: #000;
-	float: left;
-	background-color: #e5735f;
-	margin:0px 35px 0px 0px;
+  height: 350px;
+  width: 260px;
+  background-color: #000;
+  float: left;
+  background-color: #e5735f;
+  margin:0px 35px 0px 0px;
 }
 
 .ranking h1{
-	color: #fff;
-	float: right;
-	font-size: 22px;
-	font-weight: 100;
-	padding:10px 15px 0px 0px;
+  color: #fff;
+  float: right;
+  font-size: 22px;
+  font-weight: 100;
+  padding:10px 15px 0px 0px;
 }
 
 .ranking ul li{
-	clear: both;
-	width: 260px;
-	float: left;
-	height: 76px;
+  clear: both;
+  width: 260px;
+  float: left;
+  height: 76px;
     border: solid 0.5px #000;
-	box-sizing: border-box;
-	background-color: #fcd5ce;
+  box-sizing: border-box;
+  background-color: #fcd5ce;
 }
 
 .ranking ul li a{
-	float: right;
-	margin:20px 15px 0px 0px;
-	display: block;
-	font-size: 14px;
-	line-height: 40px;
-	letter-spacing: 2px;
+  float: right;
+  margin:20px 15px 0px 0px;
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 2px;
 }
 
 .ranking ul li img{
-	height:65px;
-	width: auto;
-	display: block;
-	float: left;
-	margin:5px 10px 0px;
+  height:65px;
+  width: auto;
+  display: block;
+  float: left;
+  margin:5px 10px 0px;
 }
 
 .schedule{
-	height: 350px;
-	width: 260px;
-	background-color: #000;
-	float: left;
-	background-color: #96d2ea;
+  height: 350px;
+  width: 260px;
+  background-color: #000;
+  float: left;
+  background-color: #96d2ea;
 }
 
 .schedule h1{
-	color: #fff;
-	float: right;
-	font-size: 22px;
-	font-weight: 100;
-	padding:10px 15px 0px 0px;
+  color: #fff;
+  float: right;
+  font-size: 22px;
+  font-weight: 100;
+  padding:10px 15px 0px 0px;
 }
 
 .schedule_top,.schedule_bottom{
-	clear: both;
-	width: 100%;
-	height:145px;
+  clear: both;
+  width: 100%;
+  height:145px;
 }
 
 .schedule_title{
-	width: 40%;
-	margin:0px 5%;
-	float: right;
+  width: 40%;
+  margin:0px 5%;
+  float: right;
 }
 
 .schedule_title img{
-	width: 90%;
-	margin: auto;
-	margin-bottom: 5px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 .schedule_title a{
-	width: 100%;
-	height: 20px;
-	float: left;
-	font-size: 12px;
-	margin: auto;
-	text-align: center;
+  width: 100%;
+  height: 20px;
+  float: left;
+  font-size: 12px;
+  margin: auto;
+  text-align: center;
 }
 
 .schedule_top p,.schedule_bottom p{
-	width: 260px;
-	background-color: #c1bdbd;
-	color:#f00;
-	padding:3px 0px 3px 15px;
-	margin-bottom: 15px;
-	font-size: 15px;
-	border-top:solid 0.5px #000;
-	box-sizing: border-box;
+  width: 260px;
+  background-color: #c1bdbd;
+  color:#f00;
+  padding:3px 0px 3px 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border-top:solid 0.5px #000;
+  box-sizing: border-box;
 }
 
 /*news*/
 
 .news{
-	margin:30px 30px 0px 0px;
-	width: 480px;
-	height: 350px;
-	background-color: #2bce57;
-	float: left;
+  margin:30px 30px 0px 0px;
+  width: 480px;
+  height: 350px;
+  background-color: #2bce57;
+  float: left;
 }
 
 .news h1{
-	color: #fff;
-	float: right;
-	font-size: 24px;
-	font-weight: 100;
-	padding:10px 15px 0px 0px;
+  color: #fff;
+  float: right;
+  font-size: 24px;
+  font-weight: 100;
+  padding:10px 15px 0px 0px;
 }
 
 .news ul{
-	padding-top: 40px;
-	clear: both;
-	width: 100%;
-	height: 75%;
-	background-color: #b7ebc6;
+  padding-top: 40px;
+  clear: both;
+  width: 100%;
+  height: 75%;
+  background-color: #b7ebc6;
 }
 
 .news span{
-	float: left;
-	border-bottom:solid 1px #ff0;
+  float: left;
+  border-bottom:solid 1px #ff0;
 }
 
 .news li{
-	clear: both;
-	text-align: center;
-	height: 40px;
-	width: 80%;
-	line-height: 40px;
-	margin:auto;
+  clear: both;
+  text-align: center;
+  height: 40px;
+  width: 80%;
+  line-height: 40px;
+  margin:auto;
 }
 
 .banner{
-	margin-top:30px;
-	width: 340px;
-	height: 350px;
-	background-color: #fff;
-	float: left;
+  margin-top:30px;
+  width: 340px;
+  height: 350px;
+  background-color: #fff;
+  float: left;
 }

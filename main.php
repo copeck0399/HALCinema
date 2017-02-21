@@ -1,21 +1,24 @@
-<!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>top</title>
-		<link rel="stylesheet" href="css/headfooter.css">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-<?php
-	//ヘッダーの読み込み
-	require_once( "header.html" );
-?>
-	<main>
-			<div class="gekijo">
+<!-- main -->
+<main>
+	<div class="carten">	
+		<div id="mainvisual">
+	    <div id="slideshow">
+	      <ul>
+	        <li><img src="img/aozora.jpg" /></li>
+	        <li><img src="img/gost.jpg" /></li>
+	        <li><img src="img/gozira.jpg" /></li>
+	        <li><img src="img/pets.jpg" /></li>
+	        <li><img src="img/women.jpg" /></li>
+	        <li><img src="img/kiminonawa04.png" /></li>
+	      </ul>
+	    </div>
+		</div>
+	</div>
+
+			<div class="theater">
 				<h1>劇場から探す</h1>
 				<h2>
-					<img src="img/map.png" alt="movie" class="title_img">
+					<img src="img/theater.png" alt="movie" class="title_img">
 				</h2>
 					<ul>
 						<li><a href="#">北海道・東北<img src="img/list.jpg" alt=""></a></li>
@@ -25,7 +28,6 @@
 						<li><a href="#">中国・四国・九州<img src="img/list.jpg" alt=""></a></li>
 					</ul>
 			</div>
-
 			<div class="ranking">
 				<h1>上映中の作品</h1>
 				<h2>
@@ -74,24 +76,16 @@
 			</div><!-- schedule -->
 
 			<div class="news">
-			<h1>今月のお知らせ/キャンペーン情報</h1>
-				<h2>
-					<img src="img/info.png" alt="movie" class="title_img">
-				</h2>
+				<h1>今月のお知らせ/キャンペーン情報</h1>
+					<h2>
+						<img src="img/info.png" alt="movie" class="title_img">
+					</h2>
 					<ul>
-						<li>a</li>
-						<li>df</li>
-						<li>few</li>
-						<li>few</li>
-						<li>a</li>
+						<li><span>10gatu</span>q322423</li>
+						<li><span>11gatu</span>423t2g2g2</li>
+						<li><span>11gatu</span>423t2g2g2</li>
+						<li><span>11gatu</span>423t2g2g2</li>
 					</ul>
 			</div>
+			<div class="banner"></div>
 	</main>
-
-<?php
-	//フッターの読み込み
-	require_once( "footer.html" );
-?>
-	</body>
-</html>
-
