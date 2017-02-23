@@ -26,7 +26,6 @@
 			<p class="newform_text">
 				<img src="img/hissu.jpg" width="27" height="14" alt="必須" />
 				姓<input type="text" name="name" value="">
-				名<input type="text" name="name" value="">
 			</p>
 			<p class="underline2"></p><br>
 			<!-- ***フォームA終了*** -->
@@ -35,8 +34,7 @@
 			<p class="newform_name">氏名(カナ)</p>
 			<p class="newform_text">
 				<img src="img/hissu.jpg" width="27" height="14" alt="必須" />
-				姓<input type="text" name="name" value="">
-				名<input type="text" name="name" value="">
+				姓<input type="text" name="kana" value="">
 			</p>
 			<p class="underline2"></p><br>
 			<!-- ***フォームB終了*** -->

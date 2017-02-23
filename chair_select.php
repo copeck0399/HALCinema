@@ -14,6 +14,8 @@
 <?php
 	//ヘッダーの読み込み
 	require_once( "header.html");
+
+	//座席仮押さえ
 ?>
 <main>
 	<div class='chairs'>
