@@ -4,9 +4,11 @@
 		<meta charset="utf-8">
 		<title>top</title>
 		<link rel="stylesheet" href="css/headfooter.css">
-		<link rel="stylesheet" href="css/chairs.css">
+		<link rel="stylesheet" href="css/chairsss.css">
 		<script src="js/jquery-3.1.0.min.js"></script>
 		<script src="js/tab.js"></script>
+		<script src="js/ticket.js"></script>
+		<script src="js/chairs.js"></script>
 	</head>
 	<body>
 <?php
@@ -18,7 +20,7 @@
 		<div class='settings'>
 			<div class='inner'>
 				<ul class='price_list'>
-					<li class='price_box'>
+					<li class='price_box adult'>
 					一般<span class='price'>¥1,800</span>
 					<div class='plus'>
 						<p class='btn'>＋</p>
@@ -27,7 +29,7 @@
 						<p class='btn'>ー</p>
 					</div>
 					</li>
-					<li class='price_box'>
+					<li class='price_box a_student'>
 					大高生<span class='price'>¥1,500</span>
 					<div class='plus'>
 						<p class='btn'>＋</p>
@@ -36,7 +38,7 @@
 						<p class='btn'>ー</p>
 					</div>
 					</li>
-					<li class="price_box">
+					<li class="price_box c_student">
 					小中学生<span class="price">¥1,000</span>
 					<div class='plus'>
 						<p class="btn">＋</p>
@@ -45,7 +47,7 @@
 						<p class="btn">ー</p>
 					</div>
 					</li>
-					<li class="price_box">
+					<li class="price_box child">
 					幼児<span class="price">¥800</span>
 					<div class='plus'>
 						<p class="btn">＋</p>
@@ -54,7 +56,7 @@
 						<p class="btn">ー</p>
 					</div>
 					</li>
-					<li class='price_box last'>
+					<li class='price_box last handicapped'>
 					障害者<span class="price">¥800</span>
 					<div class='plus'>
 						<p class="btn">＋</p>
@@ -68,11 +70,11 @@
 					<ul class="sum_list">
 						<li class="sum_ticket">
 							<h4>合計チケット枚数</h4>
-							<h3><span class="num">3</span>枚</h3>
+							<h3><span class="num">0</span>枚</h3>
 						</li>
 						<li class="sum_price">
 							<h4>合計金額</h4>
-							<h3><span class='num'>¥4,500</span>
+							<h3><span class='num'>¥0</span>
 							</h3>
 						</li>
 					</ul>
@@ -83,6 +85,9 @@
 			</div>
 		</div>
 		<div class='select'>
+			<div class="black">
+			　<h3 class="caption">先に画面左のチケット種別選択項目にて、<br>必要枚数分のチケットを選択してください。</h3>
+		　　</div>
 			<div class='inner'>
 				<div class="screen">
 					<h3>スクリーン</h3>
@@ -256,15 +261,15 @@
 				<div class="selected_chair">
 					<h2>選択した座席番号</h2>
 					<img src="img/pink_arrow.png" class="pink_arrow">
-					<p class="clear_btn"><a href="#">座席選択解除</a></p>
+					<p class="clear_btn">座席選択解除</p>
 					<div class="chair_box">
 						<ul>
+							<!--<li><img src="img/chair_gray.png" alt='chair'></li>
 							<li><img src="img/chair_gray.png" alt='chair'></li>
 							<li><img src="img/chair_gray.png" alt='chair'></li>
 							<li><img src="img/chair_gray.png" alt='chair'></li>
 							<li><img src="img/chair_gray.png" alt='chair'></li>
-							<li><img src="img/chair_gray.png" alt='chair'></li>
-							<li><img src="img/chair_gray.png" alt='chair'></li>
+							<li><img src="img/chair_gray.png" alt='chair'></li>-->
 						</ul>
 					</div>
 				</div>

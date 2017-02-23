@@ -60,6 +60,10 @@ main{
   margin-left : 10px;
   top : 18px;
   right : 20px;
+  box-sizing: border-box;
+}
+.plus .btn:hover{
+  border : solid 2px #fff;
 }
 .minus .btn{
   font-size : 16px;
@@ -67,6 +71,10 @@ main{
   border-radius: 3px;
   top : 18px;
   right : 60px;
+  box-sizing: border-box;
+}
+.minus .btn:hover{
+  border : solid 2px #fff;
 }
 .sum{
   width : 100%;
@@ -120,6 +128,7 @@ main{
   text-align: center;
   letter-spacing: 1px;
   position: relative;
+  box-sizing: border-box;
 }
 .selectbtn p:before{
   content: " ";
@@ -132,12 +141,38 @@ main{
   top: 16px;
   right: 15px;
 }
+.selectbtn:hover{
+  border : solid 2px #fff;
+}
 .select{
   float : right;
   width : 68%;
   height : 950px;
   border : solid 10px #a1a1aa;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 0;
+}
+.black{
+  width : 881px;
+  height : 950px;
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 10;
+  padding : 0 140.5px;
+  box-sizing: border-box;
+}
+.caption{
+  text-align: center;
+  height : 950px;
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  color : white;
+  font-weight: bold;
+  opacity: 1;
+  line-height: 1.6;
 }
 .select .inner{
   padding : 40px 20px;
@@ -188,6 +223,11 @@ main{
   text-align: center;
   margin-right : 16px;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+.chair li:hover{
+  background: #fff;
+  color : #333;
 }
 .right_last{
   margin-right : 0 !important;
@@ -226,11 +266,12 @@ main{
 }
 .selected_chair .clear_btn{
   text-align: right;
-  text-decoration: underline;
   margin-bottom : 25px;
-}
-.selected_chair .clear_btn a{
   color : #9abffa;
+}
+.selected_chair .clear_btn:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 .chair_box{
   width : 375px;
@@ -239,6 +280,7 @@ main{
 .chair_box ul{
   width : 100%;
   height : 64px;
+  margin : 0 auto;
 }
 .chair_box ul li{
   width : 50px;
@@ -277,7 +319,13 @@ main{
   font-weight: bold;
   background: #a1a1a1;
 }
+.next_btn p:hover{
+  background : orange;
+}
 .next_btn small{
   font-size : 12px;
   letter-spacing: 1px;
+}
+.chair_num{
+  letter-spacing: 2px;
 }
