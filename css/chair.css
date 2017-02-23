@@ -154,7 +154,7 @@ main{
   z-index: 0;
 }
 .black{
-  width : 881px;
+  width : 100%;
   height : 950px;
   background-color: #000;
   opacity: 0.8;
@@ -165,8 +165,9 @@ main{
 }
 .caption{
   text-align: center;
+  width: 1000px;
   height : 950px;
-  font-size: 30px;
+  font-size: 28px;
   display: table-cell;
   vertical-align: middle;
   color : white;
@@ -176,6 +177,7 @@ main{
 }
 .select .inner{
   padding : 40px 20px;
+  width : 100%;
   height : 950px;
   box-sizing: border-box;
 }
@@ -192,7 +194,8 @@ main{
   margin-bottom : 75px;
 }
 .chair{
-  width : 100%;
+  width : 840px;
+  margin : 0 auto;
 }
 .line_a,.line_b,.line_c,.line_d,.line_e,.line_f,.line_g,.line_h,.line_i{
   width : 100%;
@@ -229,7 +232,34 @@ main{
   background: #fff;
   color : #333;
 }
-.right_last{
+.chair .line_a li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_b li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_c li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_d li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_e li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_f li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_g li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_h li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_i li:last-child{
+  margin-right : 0 !important;
+}
+.chair .line_j li:last-child{
   margin-right : 0 !important;
 }
 .selected{
@@ -328,4 +358,7 @@ main{
 }
 .chair_num{
   letter-spacing: 2px;
+}
+.chair_selected{
+  background-color: #ff495e;
 }

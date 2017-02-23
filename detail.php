@@ -15,21 +15,30 @@
 	include("dbconnection/config.php");
 	include("dbconnection/connect.php");
 
-	$stmt = $pdo->prepare('SELECT * FROM film WHERE title = "君の名は。"');
-	$stmt -> execute();
-	foreach ($stmt as $row){
-		$img1 = $row["img1"];
-		$img2 = $row["img2"];
-		$img3 = $row["img3"];
-		$release = $row["rdate"];
-		$year = $row["year"];
-		$country = $row["country"];
-		$runtime = $row["runtime"];
-		$company = $row["company"];
-		$supply = $row["supply"];
-		$actor = $row["actor"];
-	}
-	?>
+	$img1 = $pdo->prepare('SELECT img1 FROM film WHERE title = "君の名は。"');
+	$img2 = $pdo->prepare('SELECT img2 FROM film WHERE title = "君の名は。"');
+	$img3 = $pdo->prepare('SELECT img3 FROM film WHERE title = "君の名は。"');
+
+	$img1 -> execute();
+	$img2 -> execute();
+	$img3 -> execute();
+
+
+	// $release = $pdo->prepare('SELECT rdate FROM film WHERE title = "君の名は。"');
+	// $release -> execute();
+
+	$year = $pdo->prepare('SELECT year FROM film WHERE title = "君の名は。"');
+	$year -> execute();
+
+	$country = $pdo->prepare('SELECT country FROM film WHERE title = "君の名は。"');
+	$country -> execute();
+
+	$runtime = $pdo->prepare('SELECT runtime FROM film where title = "君の名は。"');
+	$runtime -> execute();
+
+
+
+?>
 
 	<main>
 		<p class="none">a</p>
@@ -37,12 +46,12 @@
 		<div class="outer">
 			<div id="slide">
 				<div class="changeimg">
-					<img src="" alt="list">
+					<img src="img/rankingimg.jpg" alt="changeimg">
 				</div>
 				<div class="imglist">
-					<img src="img/<?php echo $img1?>" alt="list">
-					<img src="img/<?php echo $img2?>" alt="list">
-					<img src="img/<?php echo $img3?>" alt="list">
+					<img src="img/" + <?php $img1?> alt="list">
+					<img src="img/" + <?php $img2?> alt="list">
+					<img src="img/" + <?php $img3?> alt="list">
 				</div>
 			</div>
 		</div>
@@ -67,13 +76,15 @@
 		<h2>作品概要</h2>
 			<article>
 				<p>ストーリー</p>
-				<p>[公開日]	<?php echo $release ?></p>
-				<p>[制作年]	<?php echo $year ?>年</p>
+				<!-- <p>[公開日]	<?php echo $release ?></p> -->
+				<p>[制作年]	<?php echo $year ?></p>
 				<p>[制作国]	<?php echo $country ?></p>
-				<p>[上映時間] <?php echo $runtime ?>分</p>
-				<p>[制作会社] <?php echo $company ?></p>
-				<p>[配給] <?php echo $supply ?></p>
-				<p>[出演] <?php echo $actor ?></p>
+				<p>[上映時間] <?php echo $runtime ?></p>
+				<p>[制作会社]</p>
+				<p>[制作会社・制作]</p>
+				<p>[配給]</p>
+				<p>[企画]</p>
+				<p>[出演]</p>
 			</article>
 		</div>
 

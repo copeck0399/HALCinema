@@ -1,6 +1,3 @@
-<?php
-	$name = $_POST[""];
- ?>
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
