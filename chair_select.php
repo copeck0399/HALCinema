@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>top</title>
 		<link rel="stylesheet" href="css/headfooter.css">
-		<link rel="stylesheet" href="css/chairsss.css">
+		<link rel="stylesheet" href="css/chair.css">
 		<script src="js/jquery-3.1.0.min.js"></script>
 		<script src="js/tab.js"></script>
 		<script src="js/ticket.js"></script>
@@ -14,8 +14,6 @@
 <?php
 	//ヘッダーの読み込み
 	require_once( "header.html");
-
-	//座席仮押さえ
 ?>
 <main>
 	<div class='chairs'>
@@ -109,7 +107,7 @@
 						<li class='a-10'>10</li>
 						<li class='a-11'>11</li>
 						<li class='a-12'>12</li>
-						<li class="a-13 right_last">13</li>
+						<li class="a-13">13</li>
 					</ul>
 					<ul class='line_b'>
 						<span class="b-b">B</span>
@@ -125,7 +123,7 @@
 						<li class='b-10'>10</li>
 						<li class='b-11'>11</li>
 						<li class='b-12'>12</li>
-						<li class="b-13 right_last">13</li>
+						<li class="b-13">13</li>
 					</ul>
 					<ul class='line_c'>
 						<span class="c-c">C</span>
@@ -141,7 +139,7 @@
 						<li class='c-10'>10</li>
 						<li class='c-11'>11</li>
 						<li class='c-12'>12</li>
-						<li class="c-13 right_last">13</li>
+						<li class="c-13">13</li>
 					</ul>
 					<ul class='line_d'>
 						<span class="d-d">D</span>
@@ -157,7 +155,7 @@
 						<li class='d-10'>10</li>
 						<li class='d-11'>11</li>
 						<li class='d-12'>12</li>
-						<li class="d-13 right_last">13</li>
+						<li class="d-13">13</li>
 					</ul>
 					<ul class='line_e'>
 						<span class="e-e">E</span>
@@ -173,7 +171,7 @@
 						<li class='e-10'>10</li>
 						<li class='e-11'>11</li>
 						<li class='e-12'>12</li>
-						<li class="e-13 right_last">13</li>
+						<li class="e-13">13</li>
 					</ul>
 					<ul class='line_f'>
 						<span class="f-f">F</span>
@@ -189,7 +187,7 @@
 						<li class='f-10'>10</li>
 						<li class='f-11'>11</li>
 						<li class='f-12'>12</li>
-						<li class="f-13 right_last">13</li>
+						<li class="f-13">13</li>
 					</ul>
 					<ul class='line_g'>
 						<span class="g-g">G</span>
@@ -205,7 +203,7 @@
 						<li class='g-10'>10</li>
 						<li class='g-11'>11</li>
 						<li class='g-12'>12</li>
-						<li class="g-13 right_last">13</li>
+						<li class="g-13">13</li>
 					</ul>
 					<ul class='line_h'>
 						<span class="h-h">H</span>
@@ -221,7 +219,7 @@
 						<li class='h-10'>10</li>
 						<li class='h-11'>11</li>
 						<li class='h-12'>12</li>
-						<li class="h-13 right_last">13</li>
+						<li class="h-13">13</li>
 					</ul>
 					<ul class='line_i'>
 						<span class="i-i">I</span>
@@ -237,7 +235,7 @@
 						<li class='i-10'>10</li>
 						<li class='i-11'>11</li>
 						<li class='i-12'>12</li>
-						<li class="i-13 right_last">13</li>
+						<li class="i-13">13</li>
 					</ul>
 					<ul class='line_j'>
 						<span class="j-j">J</span>
@@ -253,7 +251,7 @@
 						<li class='j-10'>10</li>
 						<li class='j-11'>11</li>
 						<li class='j-12'>12</li>
-						<li class="j-13 right_last">13</li>
+						<li class="j-13">13</li>
 					</ul>
 				</div>
 			</div>

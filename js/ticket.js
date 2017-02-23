@@ -157,6 +157,14 @@ $(function(){
 	    //カウント数を挿入
         $('.sum .sum_list .sum_ticket h3 .num').text(count);
 	    $('.sum .sum_list .sum_price h3 .num').text('¥'+price);	
+		}else if(price < -1){
+			count = 0;
+			price = 0;
+	    //カウント数を挿入
+	        $('.sum .sum_list .sum_ticket h3 .num').text(count);
+		    $('.sum .sum_list .sum_price h3 .num').text('¥'+price);	
 		}
 	});
+
+
 });

@@ -21,21 +21,26 @@ $(function(){
 		}
 
 
+
 	//座席をクリックしたら１つ１つ画像をピンクに
 	var cnum = 0;
+	//フラグ
+	var flag = false;
 	$('.chair li').click(function(){
 		//座席を選んだ数（クリック数）を取得
 		$(this).data('click', ++cnum);
 		var click = $(this).data('click');
 		//alert(click);
 
+		//グレーの椅子の数を取得
+		var box = $(".chair_box ul li").length;
+		alert(box);
+
 		//選んだ座席の背景色をピンクに
 		$(this).css({
 			'background-color':'#ff495e'
 		});
-
-		//グレーの椅子の数を取得
-		var box = $(".chair_box ul li").length;
+		
 		//クリックした座席番号を取得
 		var chairnum = $(this).attr('class');
 		console.log(chairnum);
