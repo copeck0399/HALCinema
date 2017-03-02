@@ -5,14 +5,54 @@
 	<meta http-equiv="Content-Style-Type" content="text/css">
 	<link rel="stylesheet" href="../css/a_upload.css" media="screen" title="css">
 	<title>座席写真アップロード</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+	<div class="ii">
+		<input type="file" id="files" name="files[]" multiple />
+		<br>
+		<output id="list"></output>
+	</div>
+		<script type="text/javascript">
+		function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
 </head>
 <body>
+
 	<header>
 		<img src="../img/hcl.png" alt="logo" width="160" height="160">
 	</header>
 		<h1>座席写真アップロード</h1>
 		<div class="content">
-			<form action=".php" method="POST">
+			<form action="chair_upload_conf.html" method="POST">
 				<table>
 					<tr>
 						<th>表タイトル</th>
@@ -24,21 +64,15 @@
 					</tr>
 					<tr>
 						<th>添付ファイル</th>
-						<td>
+						<td class="ss">
 							<!-- 添付&削除ボタン -->
-							<p>
-								<input type="button" name="name" class="upload" value="添付">
-								<input type="button" name="name" class="cancel" value="削除">
-							</p>
-							<!-- 添付ファイル -->
-							<img src="../img/hcl.png" alt="image01.jpg" />
-							<!-- ファイル名 -->
-							<p>image01.jpg</p>
+<input type="submit" name="name" class="cancel" value="削除" onclick="form.action='chair_upload.html';return true">
+
 						</td>
 					</tr>
 				</table>
+			<input type="submit" name="name" class="upload2" value="確認画面へ">
 			</form>
-			<input type="button" name="name" class="upload" value="確認画面へ">
 		</div>
 </body>
 </html>

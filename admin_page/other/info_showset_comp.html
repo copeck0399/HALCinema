@@ -10,41 +10,46 @@
 	<header>
 		<img src="../img/hcl.png" alt="logo" width="160" height="160">
 	</header>
-		<h2>登録が完了しました。</h2>
+	<p class="conf">映画情報表示完了</p>
+	<div class="content">
+		<p class="conf2">登録が完了しました。</p>
 		<h1>タイトル</h1>
-		<div class="content">
-			<form action=".php" method="POST">
+
+			<form action="../top/top.html" method="POST">
+
 				<table>
 					<tr>
 						<th>作品概要</th>
-						<td><img src="../img/hcl.png" alt="logo" width="160" height="160"></td>
+						<td class="showset1"></td>
 						<td>非表示<br/><input type="checkbox" name="name" value=""></td>
 					</tr>
 					<tr>
 						<th>製作国</th>
-						<td><img src="../img/hcl.png" alt="logo" width="160" height="160"></td>
+							<td class="showset"></td>
 						<td>非表示<br/><input type="checkbox" name="name" value=""></td>
 					</tr>
 					<tr>
 						<th>上映期間</th>
-						<td><img src="../img/hcl.png" alt="logo" width="160" height="160"></td>
+							<td class="showset"></td>
 						<td>非表示<br/><input type="checkbox" name="name" value=""></td>
 					</tr>
 					<tr>
 						<th>開場/上映時間</th>
-						<td><img src="../img/hcl.png" alt="logo" width="160" height="160"></td>
+						<td class="showset"></td>
 						<td>非表示<br/><input type="checkbox" name="name" value=""></td>
 					</tr>
 				</table>
-			</form>
+
 			<div class="boxContainer">
 				<div class="box"><img src="../img/hcl.png" alt="logo" width="160" height="160"></div>
 				<div class="box"><img src="../img/hcl.png" alt="logo" width="160" height="160"></div>
 				<div class="box"><img src="../img/hcl.png" alt="logo" width="160" height="160"></div>
 			</div>
-			<p>
-				<input type="button" name="name" class="upload" value="戻る">
-			</p>
-		</div>
-</body>
-</html>
+				</div>
+				<p>
+					<input type="submit" name="name" class="cancel" value="戻る">
+				</p>
+			</form>
+
+	</body>
+	</html>

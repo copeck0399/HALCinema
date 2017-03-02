@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Style-Type" content="text/css">
 	<link rel="stylesheet" href="../css/a_upload_conf.css" media="screen" title="css">
@@ -10,10 +11,11 @@
 	<header>
 		<img src="../img/hcl.png" alt="logo" width="160" height="160">
 	</header>
-		<h1><img src="../img/warning.png" alt="warning" width="30" height="30" />確認</h1>
-		<h2>以下の内容でアップロードします。<br />よろしいですか？</h2>
+		<h1>座席写真アップロード確認</h1>
 		<div class="content">
-			<form action=".php" method="POST">
+			<p class="check"><img src="../img/warning.png" alt="warning" width="30" height="30" />確認</p>
+			<p>以下の内容でアップロードします。<br />よろしいですか？</p>
+			<form action="chair_upload_comp.html" method="POST">
 				<table>
 					<tr>
 						<th>表タイトル</th>
@@ -36,10 +38,10 @@
 				</table>
 				<!-- 添付&削除ボタン -->
 				<p>
-					<input type="button" name="name" class="upload" value="アップロード">
-					<input type="button" name="name" class="cancel" value="キャンセル">
+					<input type="submit" name="name" class="upload" value="アップロード">
+					<input type="button" name="name" class="cancel" value="キャンセル" onclick="history.back();">
 				</p>
-			</form>
+				</form>
 		</div>
 </body>
 </html>

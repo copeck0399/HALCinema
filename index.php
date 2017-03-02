@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>top</title>
 		<link rel="stylesheet" href="css/headfooter.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/mains.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.roundabout.js"></script>
 		<script>

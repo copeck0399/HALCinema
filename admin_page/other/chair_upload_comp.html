@@ -12,12 +12,12 @@
 	</header>
 		<h1>座席写真アップロード完了</h1>
 		<div class="content">
-			<form action=".php" method="POST">
+			<form action="chair_upload.html" method="POST">
 				<table>
 					<!-- アップロード&戻るボタン -->
 					<p>
-						<input type="button" name="name" class="upload" value="続けてアップロード">
-						<input type="button" name="name" class="cancel" value="戻る">
+						<input type="submit" name="name" class="upload" value="続けてアップロード" onclick="form.action='chair_upload.html';return true">
+						<input type="submit" name="name" class="cancel" value="戻る" onclick="form.action='../top/top.html';return true">
 					</p>
 					<tr>
 						<th>表タイトル</th>

@@ -11,21 +11,19 @@
 		<img src="../img/hcl.png" alt="logo" width="160" height="160">
 	</header>
 		<h1>映画情報更新確認</h1>
-
-<h2><img src="../img/warning.png" alt="logo" width="20" height="20">確認</h2>
-<p>以下の内容でアップロードします。<br>
-	よろしいでしょうか？</p>
-
 		<div class="content">
-			<form action=".php" method="POST">
+			<h2><img src="../img/warning.png" alt="logo" width="20" height="20">確認</h2>
+			<p>以下の内容でアップロードします。<br>
+				よろしいでしょうか？</p>
+			<form action="info_reload_comp.html" method="POST">
 				<table>
 					<tr>
 						<th>作品タイトル</th>
-						<td>新ゴジラ</td>
+						<td></td>
 					</tr>
 					<tr>
 						<th>作品概要</th>
-						<td></td>
+						<td class="sakuhin"></td>
 					</tr>
 
 					<tr>
@@ -47,11 +45,8 @@
 					<tr>
 						<th>添付ファイル</th>
 						<td>
-							<!-- 添付&削除ボタン -->
-							<p>
-								<a id="button" href="#">添付</a>
-			          <a id="button2" href="#">削除</a>
-							</p>
+						
+
 							<!-- 添付ファイル -->
 							<img src="../img/hcl.png" alt="image01.jpg" />
 							<!-- ファイル名 -->
@@ -61,9 +56,12 @@
 
 
 				</table>
+
+			<p>
+				<input type="submit" name="name" class="upload_conf" value="アップロード">
+				<input type="button" name="name" class="cancel_conf" value="キャンセル" onclick="history.back();">
+			</p>
 			</form>
-			<a id="button" href="#">アップロード</a>
-		<a id="button2" href="#">キャンセル</a>
 		</div>
 </body>
 </html>

@@ -12,21 +12,22 @@
 	</header>
 		<h1>映画情報更新完了</h1>
 
-		<!-- 添付&削除ボタン -->
-		<a id="button" href="#">続けてアップロード</a>
-		<a id="button2" href="#">戻る</a>
-
-
 		<div class="content">
 			<form action=".php" method="POST">
 				<table>
+
+							<!-- アップロード&戻るボタン -->
+							<p>
+								<input type="submit" name="name" class="upload_comp" value="続けてアップロード" onclick="form.action='info_reload.html';return true">
+								<input type="submit" name="name" class="cancel_comp" value="戻る" onclick="form.action='../top/top.html';return true">
+							</p>
 					<tr>
 						<th>作品タイトル</th>
 						<td>新ゴジラ</td>
 					</tr>
 					<tr>
 						<th>作品概要</th>
-						<td></td>
+						<td class="sakuhin"></td>
 					</tr>
 
 					<tr>
